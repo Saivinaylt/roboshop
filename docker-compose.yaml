@@ -5,11 +5,8 @@ networks:
   roboshop:
     driver: bridge
 volumes:
-  # docker volume create mongodb
   mongodb:
   redis:
-  mysql:
-  rabbitmq:
 services:
   mongodb:
     image: mongodb:v1
@@ -22,11 +19,12 @@ services:
         nocopy: true
   redis:
     image: redis
-    containe_name: redis
+    container_name: redis
     volumes:
     - type: volume
       source: redis
-      target: /data 
-      volume:
-        nocopy: true
+      target: /data
+      volume: 
+         nocopy: true
+
 
