@@ -28,7 +28,7 @@ services:
          nocopy: true
   catalogue:
     image: catalogue:v1
-    conatiner_name: catalogue
+    container_name: catalogue
     depends_on:
       - mongodb
   web:
