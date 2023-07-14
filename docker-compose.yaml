@@ -44,12 +44,12 @@ services:
     depends_on:
       - mongodb
       - redis
-  cart:
-    image: cart:v1
-    container_name : cart
-    depends_on:
-      - catalogue
-      - redis
+  # cart:
+  #   image: cart:v1
+  #   container_name : cart
+  #   depends_on:
+  #     - catalogue
+  #     - redis
     
 
 
