@@ -5,7 +5,7 @@ networks:
   roboshop:
 volumes:
   mongodb:
-  radis:
+  redis:
 services:
   mongodb:
     image: mongodb:v1
