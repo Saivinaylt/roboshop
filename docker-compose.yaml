@@ -3,9 +3,13 @@
 version: '3'
 networks:
   roboshop:
+    driver: bridge
 volumes:
+  # docker volume create mongodb
   mongodb:
   redis:
+  mysql:
+  rabbitmq:
 services:
   mongodb:
     image: mongodb:v1
