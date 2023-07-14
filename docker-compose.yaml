@@ -5,6 +5,7 @@ networks:
   roboshop:
 volumes:
   mongodb:
+  radis:
 services:
   mongodb:
     image: mongodb:v1
@@ -15,5 +16,13 @@ services:
       target: /data/db
       volume:
         nocopy: true
-
+  redis:
+    image: redis
+    containe_name: redis
+    volumes:
+    - type: volume
+      source: redis
+      target: /data 
+      volume:
+        nocopy: true
 
