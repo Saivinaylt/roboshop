@@ -1,6 +1,6 @@
 #i need to run the mongo db image as conatiner and assign the name of conatiner and network also volume 
 
-version: '3'
+version: '3.9'
 networks:
   roboshop:
     driver: bridge
