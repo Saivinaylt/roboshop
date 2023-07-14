@@ -6,8 +6,8 @@ volumes:
   # docker volume create mongodb
   mongodb:
   redis:
-  # mysql:
-  # rabbitmq:
+  mysql:
+  rabbitmq:
 services:
   catalogue:
     image: catalogue:v1
