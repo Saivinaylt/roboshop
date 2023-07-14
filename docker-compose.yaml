@@ -1,0 +1,19 @@
+#i need to run the mongo db image as conatiner and assign the name of conatiner and network also volume 
+
+version: '3'
+networks:
+  roboshop:
+volumes:
+  mongodb:
+services:
+  mongodb:
+    image: mongodb:v1
+    container_name: mongodb
+    volume:
+      -type: volume
+      source: mongodb
+      target: /data/db
+      volume:
+        nocopy: true
+
+
